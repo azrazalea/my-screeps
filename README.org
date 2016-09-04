@@ -1,0 +1,4 @@
+* My Screeps Repo
+
+* LICENSE
+LGPLv3, see LICENSE file.
