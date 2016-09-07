@@ -1,4 +1,4 @@
 * My Screeps Repo
-
+Clojurescript project generated via [[https://github.com/swannodette/mies][mies]].
 * LICENSE
 LGPLv3, see LICENSE file.
