@@ -1,4 +1,5 @@
 * My Screeps Repo
 Clojurescript project generated via [[https://github.com/swannodette/mies][mies]].
+Uses [[https://github.com/archlisp/screeps-beans][screeps-beans]].
 * LICENSE
 LGPLv3, see LICENSE file.
