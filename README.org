@@ -2,7 +2,7 @@
 Clojurescript project generated via [[https://github.com/swannodette/mies][mies]].
 Uses [[https://github.com/archlisp/screeps-beans][screeps-beans]].
 * Clojurescript build instructions
-Currently the clojurescript build isn't work the way I think it should, see http://stackoverflow.com/questions/39397638/clojurescript-duplicate-extern-input-error. Instead, I have a workaround described below.
+Currently the clojurescript build isn't work the way I think it should, see [[http://stackoverflow.com/questions/39397638/clojurescript-duplicate-extern-input-error]]. Instead, I have a workaround described below.
 - git clone [[https://github.com/archlisp/screeps-beans][screeps-beans]] to the same directory as this my-screeps directory. (so if you do "ls ../" from the directory containing this readme you should see both)
 - Checkout the remove_extern branch in screeps-beans
 - Run "lein install" in screeps-beans
