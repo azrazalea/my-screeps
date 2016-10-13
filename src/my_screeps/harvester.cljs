@@ -14,9 +14,6 @@
                                                                                  (= (screeps.structure/type structure) js/STRUCTURE_SPAWN)
                                                                                  (= (screeps.structure/type structure) js/STRUCTURE_TOWER))
                                                                              (< (screeps.structure/energy structure) (screeps.structure/energy-capacity structure)))))]
-      (println targets)
       (when (> (.-length targets) 0)
-        (println (aget targets 0))
-        (println (screeps.creep/transfer creep (aget targets 0)))
-        (when (= (screeps.creep/transfer creep (aget targets 0)) js/ERR_NOT_IN_RANGE)
+        (when (= (screeps.creep/transfer-energy creep (aget targets 0)) js/ERR_NOT_IN_RANGE)
          (screeps.creep/move-to creep (aget targets 0)))))))

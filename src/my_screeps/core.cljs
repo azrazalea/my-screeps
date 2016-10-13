@@ -16,8 +16,9 @@
   []
   (when-let [tower (screeps.game/object "TOWER_ID")]
     (when-let [closest-damaged-structure
-               (.findClosestByRange js/FIND_STRUCTURES {
-                                                        :filter (fn [structure] (< (.-hits structure) (.-hitsMax structure)))})]
+               (.findClosestByRange
+                js/FIND_STRUCTURES
+                {:filter (fn [structure] (< (.-hits structure) (.-hitsMax structure)))})]
       (.repair tower closest-damaged-structure))
     (when-let [closest-hostile (.findClosestByRange js/FIND_HOSTILE_CREEPS)]
       (.attack tower closest-hostile)))
