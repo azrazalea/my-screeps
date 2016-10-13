@@ -110,3 +110,4 @@ dist/
 
 # Screeps
 creds.json
+/set_env.sh

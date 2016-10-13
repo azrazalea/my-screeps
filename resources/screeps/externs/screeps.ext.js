@@ -51,7 +51,7 @@ Creep.prototype = {
 	repair: function (target) { },
 	say: function(message) { },
 	suicide: function () { },
-	transferEnergy: function (target, amount) { },
+        transfer: function (target, amount, resource) { },
 	unclaimController: function(target) { },
 	upgradeController: function(target) { }
 };
