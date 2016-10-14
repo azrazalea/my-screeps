@@ -8,7 +8,8 @@
             screeps.structure
             [my-screeps.harvester :as harvester]
             [my-screeps.upgrader :as upgrader]
-            [my-screeps.builder :as builder]))
+            [my-screeps.builder :as builder]
+            [my-screeps.spawning-pool :as spawning-pool]))
 
 (enable-console-print!)
 
@@ -22,6 +23,8 @@
       (.repair tower closest-damaged-structure))
     (when-let [closest-hostile (.findClosestByRange js/FIND_HOSTILE_CREEPS)]
       (.attack tower closest-hostile)))
+
+  (spawning-pool/run)
 
   (doseq [creep (screeps.game/creeps)]
     (case (:role (screeps.creep/memory creep))
